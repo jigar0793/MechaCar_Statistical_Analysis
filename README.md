@@ -1,6 +1,6 @@
 # MechaCar_Statistical_Analysis
 
-Linear Regression to Predict MPG
+## Linear Regression to Predict MPG
 
 1. The variables vehicle_length and ground_clearance (as well as the intercept) provided a non-random amount of variance to the mpg values in the dataset.
 
@@ -8,23 +8,25 @@ Linear Regression to Predict MPG
 
 3. Since our r-value is 0.72 and our p-value is significant, we can say that our linear model does predict mpg of MechaCar prototypes effectively. However we can see that the intercept provided a non-random amount of variance to the mpg values. This may mean that the significant features such as vehicle_length and ground_clearance may need scaling or there may be other factors influencing the mpg of the prototypes. Hence, more effective models could be made to better predict the mpg of MechaCar prototypes than our model.
 
-image
+![summary_data_lm](https://user-images.githubusercontent.com/94248676/181592952-468fdebb-c113-41c0-8356-c3f6d31c40ac.jpeg)
 
-Summary Statistics on Suspencion Coils
+## Summary Statistics on Suspencion Coils
 
 The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 PSI. From the total_summary dataframe we can see that the overall variance is 62.29 which is well under our threshold of 100. However, looking at the lot_summary dataframe we can observe that even though the variance of suspension coils in Lot 1 and Lot 2 meet the requirements, the variance of suspension coils in Lot 3 is 170.29 which far exceeds the 100 PSI variance threshold and hence doesn't meet the design specification.
 
-image
+![total_summary_table](https://user-images.githubusercontent.com/94248676/181593089-7c2f3934-5e00-4ec3-9410-2949312fe8b9.jpeg)
+![lot_summary_table](https://user-images.githubusercontent.com/94248676/181593103-eacb7e44-9b05-4242-918a-939fbce5b7cf.jpeg)
 
-T-Tests on Suspension Coils
+## T-Tests on Suspension Coils
 
 Performing t-test on the PSI across all manufacturing lots we found that the p-value was 0.06 while our significance level was 0.05%. Since the p-value was larger than our significance level, we can conclude that the PSI across all manufacturing lots was not statistically different from the population mean of 1500 PSI.
 
-image
+![total_ttest](https://user-images.githubusercontent.com/94248676/181600915-0399a479-7375-492e-a0ec-24fe95314989.jpeg)
+![lot_ttest](https://user-images.githubusercontent.com/94248676/181600925-3443c144-40be-4159-bd29-3805a9c7281d.jpeg)
 
 While performing t-test on the PSI of individual lots, the p-values of Lot1, Lot2, and Lot3 were 1, 0.61 and 0.42 respectively. Here the p-values of both Lot1 and Lot2 were larger than the significance level of 0.05%. However, the p-value of Lot3 was smaller than our significance level, indicating that only for Lot3, the PSI there was statistically different from the population mean of 1500.
 
-Study Design: MechaCar vs Competition
+## Study Design: MechaCar vs Competition
 
 To study the performance of MechaCar against its competitors we can use t-tests to quantify how MechaCar performs across different categories versus its competition.
 
